@@ -12,3 +12,4 @@ resource "aws_instance" "ecomm" {
   }
 }
 
+aws ec2 create-key-pair --key-name demo --query 'KeyMaterial' --output text > demo.pem
